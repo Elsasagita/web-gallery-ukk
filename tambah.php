@@ -92,9 +92,6 @@
                 <td>:</td>
                 <td> <textarea name="fDeskripsi" id="deskripsi" cols="30" rows="10"></textarea> </td>
             </tr>
-            <tr>
-                <img link=img/rumah.jpg> </img>
-            <tr>
                 <td></td>
                 <td></td>
                 <td><button type="submit" name="submit">Tambah Data!</button></td>

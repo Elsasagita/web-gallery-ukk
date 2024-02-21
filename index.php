@@ -12,7 +12,7 @@
 <body>
     <?php
         require"function.php";
-        $datas= query("SELECT * FROM album");
+        $datas= query("SELECT * FROM foto");
 
     ?>
     <!-- <nav></nav> -->

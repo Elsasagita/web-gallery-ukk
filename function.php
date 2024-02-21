@@ -1,5 +1,5 @@
 <?php
-    $koneksi = mysqli_connect("localhost","root","", "galeripoto");
+    $koneksi = mysqli_connect("localhost","root","", "galery");
 
     function query($query){
         global $koneksi;

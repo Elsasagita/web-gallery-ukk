@@ -1,18 +1,17 @@
 <?php
-    require"function.php";
-    $cekId= $_GET["id"];
-    
-    $query="DELETE FROM albumfoto WHERE id=$cekId";
-    mysqli_query($koneksi,$query );
+    $koneksi = mysqli_connect("localhost","root","", "galeripoto");
 
-    echo "
-        <script>
-            alert('data berhasil dihaus!');
-            document.location.href='admin.php';
-        </script>
-    ";
-    
-?>
+    function query($query){
+        global $koneksi;
+        $result = mysqli_query($koneksi,$query);
+        $rows=[];
+
+        while($row= mysqli_fetch_assoc($result)){
+            $rows[]=$row;
+        };
+
+        return $rows;
+    }
 
 
 
